@@ -16,3 +16,4 @@ ALTERACAO
 - Corrigido a URL do QRcode para CTe em homologação.
 - Modificado a ferraemnta de alteração das versões para simplificar o seu uso e permitir a utilização do novo padrão de versionamento.
 - Modificado a versão geral para 0.0.770.1.
+- Adicionado as dlls do FastReport na versão 2017.1.22.0 via pacote nuget.

@@ -35,17 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FastReport, Version=2017.4.1.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Dlls\FastReport.dll</HintPath>
+    <Reference Include="FastReport, Version=2017.1.22.0, Culture=neutral, PublicKeyToken=417583d16d08abed, processorArchitecture=MSIL">
+      <HintPath>..\packages\eSistemFastReport.2017.1.22\lib\net40\FastReport.dll</HintPath>
     </Reference>
-    <Reference Include="FastReport.Bars, Version=2017.4.1.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Dlls\FastReport.Bars.dll</HintPath>
+    <Reference Include="FastReport.Bars, Version=2017.1.22.0, Culture=neutral, PublicKeyToken=417583d16d08abed, processorArchitecture=MSIL">
+      <HintPath>..\packages\eSistemFastReport.2017.1.22\lib\net40\FastReport.Bars.dll</HintPath>
     </Reference>
-    <Reference Include="FastReport.Editor, Version=2017.4.1.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Dlls\FastReport.Editor.dll</HintPath>
+    <Reference Include="FastReport.Editor, Version=2017.1.22.0, Culture=neutral, PublicKeyToken=417583d16d08abed, processorArchitecture=MSIL">
+      <HintPath>..\packages\eSistemFastReport.2017.1.22\lib\net40\FastReport.Editor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -85,6 +82,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\CTeEvento.frx" />
     <None Include="Resources\CTeRetrato.frx" />
   </ItemGroup>
