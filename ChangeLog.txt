@@ -1,0 +1,18 @@
+
+
+
+==> 0.0.770.X
+- 
+
+
+
+==> 0.0.770.1
+OBSERVACAO COMMIT INICIAL
+- Commit inicial da modificação do fork do projeto, o fork foi feito na data 18/08/2020, com o ultimo commit feito no dia 17/08/2020 no link (https://github.com/ZeusAutomacao/DFe.NET/commit/102282b5299a974c307aecec1578a3a98fdc9ed7).
+- O versionamento original é 1.0.0.770, com a ideia de manter parte da versão original como referencia, vou manter o final do versionamento original, retirar o primeiro digito, e usar o ultimo grupo de versão para ser o nosso controle versão.
+- Atualmente o versionamento do pacote Nuget.org é feto de forma separada e não acompanha a mesma versão dos projetos, os pacotes nugets estão na versão 1.0.0.1031 para MDFe e CTe e 1.0.1.1031. O versionamento do nosso pacote irá aconpanhar a versão dos arquivos dos projetos.
+ALTERACAO
+- Alterado o TagertFramework do projeto "NFe.Danfe.AppTeste.NetCore" de .Net Core 3.1 para .Net Core 2.2, para facilitar a compilação da solução no Visual Studio 2017, apoiado pelo fato de que não implementamos ainda a solução para .Net Core.
+- Corrigido a URL do QRcode para CTe em homologação.
+- Modificado a ferraemnta de alteração das versões para simplificar o seu uso e permitir a utilização do novo padrão de versionamento.
+- Modificado a versão geral para 0.0.770.1.

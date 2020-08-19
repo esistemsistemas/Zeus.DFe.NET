@@ -304,7 +304,7 @@ namespace CTe.Servicos.Enderecos.Helpers
                         CteInutilizacao = @"https://hcte.fazenda.mg.gov.br/cte/services/CteInutilizacao?wsdl",
                         CteRecepcaoEvento = @"https://hcte.fazenda.mg.gov.br/cte/services/RecepcaoEvento?wsdl",
                         CteConsulta = @"https://hcte.fazenda.mg.gov.br/cte/services/CteConsulta?wsdl",
-                        QrCode = @"https://hcte.fazenda.mg.gov.br/portalcte/sistema/qrcode.xhtml",
+                        QrCode = @"https://cte.fazenda.mg.gov.br/portalcte/sistema/qrcode.xhtml",
                         CTeDistribuicaoDFe = @"https://hom1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx"
                     };
                 case Estado.PR:

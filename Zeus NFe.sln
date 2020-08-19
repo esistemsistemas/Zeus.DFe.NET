@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.352
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFe.Classes", "NFe.Classes\NFe.Classes.csproj", "{29CA1DA2-440D-484B-951A-CF1B2EB27984}"
 EndProject
@@ -151,6 +151,11 @@ EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared.NFe.Danfe.Fast", "Shared.NFe.Danfe.Fast\Shared.NFe.Danfe.Fast.shproj", "{5794AB8A-FF29-4F55-ABC2-9AAFE333BD27}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NFe.Danfe.AppTeste.NetCore", "NFe.Danfe.AppTeste.NetCore\NFe.Danfe.AppTeste.NetCore.csproj", "{0999204F-594C-4996-88A2-93D015EBDE33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Projeto", "_Projeto", "{F454BFAA-6AD3-47B9-A93A-84254E4B4125}"
+	ProjectSection(SolutionItems) = preProject
+		ChangeLog.txt = ChangeLog.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

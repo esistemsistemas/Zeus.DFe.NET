@@ -19,7 +19,7 @@ namespace Dev.VersaoAssemblies
                 Console.WriteLine("Olá, sou seu assitente para alteração de versão em massa");
                 Console.WriteLine("Para continuar preciso que informe qual versão deseja utilizar. Vamos la?");
                 Console.WriteLine("Versão atual do projeto é: " + _versaoAtual);
-                Console.Write("Então qual versão quer utilizar? (informe a versãoe aperter ENTER):");
+                Console.Write("Então qual versão quer utilizar? (informe a versão e aperte ENTER):");
                 var versaoString = Console.ReadLine();
 
                 FazerAlteracaoDasVersoes(versaoString);
@@ -51,7 +51,13 @@ namespace Dev.VersaoAssemblies
 
         private static void CarregarDiretorioProjeto()
         {
-            _diretorioRoot = Environment.GetEnvironmentVariable("PROJETO_ZEUS_DFE") ?? string.Empty;
+#if (DEBUG)
+            _diretorioRoot = Environment.CurrentDirectory.Replace("\\Dev.VersaoAssemblies\\bin\\Debug","");
+#else
+            _diretorioRoot = string.Empty;
+#endif
+
+            //_diretorioRoot = Environment.GetEnvironmentVariable("PROJETO_ZEUS_DFE") ?? _diretorioRoot;
 
             if (!File.Exists(Path.Combine(_diretorioRoot, "Zeus NFe.sln")))
             {
@@ -74,7 +80,7 @@ namespace Dev.VersaoAssemblies
                     continue;
                 }
 
-                var regexValidarVersao = new Regex(@"^[0-9]\.[0-9]{1,2}\.0\.[0-9]{1,4}$");
+                var regexValidarVersao = new Regex(@"^[0-9]\.[0-9]{1,2}\.[0-9]{1,4}\.[0-9]{1,4}$");
 
                 if (!regexValidarVersao.IsMatch(versaoString))
                 {
